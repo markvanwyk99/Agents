@@ -1,0 +1,18 @@
+Windows Servers
+
+Steps to Install the Windows Agent
+Copy QualysCloudAgent.exe to the host you want to monitor and run the command pointing to where the install file was copied to.
+
+QualysCloudAgent.exe CustomerId={20ac43d9-5643-6e95-8366-1f4483eb88f9} ActivationId={3931dc89-2572-4051-ad63-cc26c7570f62} WebServiceUri=https://qagpublic.qg2.apps.qualys.eu/CloudAgent/
+
+
+Linux/CentOS
+Steps to Install the Linux Agent
+Copy QualysCloudAgent.rpm to the host you want to monitor and run the commands
+
+sudo rpm -ivh QualysCloudAgent.rpm 
+sudo /usr/local/qualys/cloud-agent/bin/qualys-cloud-agent.sh ActivationId=3931dc89-2572-4051-ad63-cc26c7570f62 CustomerId=20ac43d9-5643-6e95-8366-1f4483eb88f9
+
+For the ARM64 installation, run this command.
+sudo rpm -ivh QualysCloudAgentARM64.rpm 
+sudo /usr/local/qualys/cloud-agent/bin/qualys-cloud-agent.sh ActivationId=3931dc89-2572-4051-ad63-cc26c7570f62 CustomerId=20ac43d9-5643-6e95-8366-1f4483eb88f9
